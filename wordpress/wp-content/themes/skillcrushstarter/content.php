@@ -25,6 +25,7 @@
 		<footer class="entry-footer">
 			<div class="entry-meta">
 				<span class="entry-terms comments author">
+					Written by <?php the_author(); ?> /
 					Posted in <?php the_category(', '); ?>
 					/
 					<a href="<?php comments_link(); ?>"><?php comments_number( '<span>No Comments</span>', '1 Comment', '% comments' ); ?></a>
