@@ -16,9 +16,8 @@
 
 get_header(); ?>
 
-<section class="blog-page">
-		<div class="container wrap">
-		<div class="main-content">
+<section class="index-page">
+	<div class="main-content">
 		<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h3>Hello, Skillcrushers!</h3>
@@ -26,11 +25,9 @@ get_header(); ?>
 				<p>The file that creates this default page is index.php.</p>
 			<?php endwhile; ?>
 		<?php endif; ?>
-		</div>
-	
+	</div>
 
 	<?php get_sidebar(); ?>
-</div>
 </section>
 
 <?php get_footer(); ?>
