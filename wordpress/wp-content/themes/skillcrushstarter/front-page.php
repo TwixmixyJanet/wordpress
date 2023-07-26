@@ -14,7 +14,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<article class="post-entry">
-                This is my new home page.
+                
 				<?php the_content(); ?>
 			</article>
 		<?php endwhile; ?>
