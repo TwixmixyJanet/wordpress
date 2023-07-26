@@ -17,15 +17,15 @@ get_header(); ?>
 
 <section class="category-page">
 	<div class="main-content">
-			<?php if ( have_posts() ) : ?>
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php get_template_part( 'content', get_post_format() ); ?>
-	<?php endwhile; ?>
-<?php else: ?>
-	<article>
-		<h4>No posts found!</h4>
-	</article>
-<?php endif; ?>
+		<?php if ( have_posts() ) : ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php endwhile; ?>
+		<?php else: ?>
+			<article>
+				<h4>No posts found!</h4>
+			</article>
+		<?php endif; ?>
 	</div>
 
 	<?php get_sidebar(); ?>

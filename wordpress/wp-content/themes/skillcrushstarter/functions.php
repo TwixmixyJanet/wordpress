@@ -66,7 +66,6 @@ function skillcrushstarter_widgets_init() {
 }
 add_action( 'widgets_init', 'skillcrushstarter_widgets_init' );
 
-
 // Defines custom markup for post comments
 function skillcrushstarter_comments($comment, $args, $depth) {
 	$comment  = '<li class="comment">';
@@ -78,6 +77,6 @@ function skillcrushstarter_comments($comment, $args, $depth) {
 	$comment .= '<p>' . get_comment_text() . '</p>';
 	$comment .= '</div>';
 	$comment .= '</li>';
- 
+
 	echo $comment;
 }
